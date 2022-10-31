@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  
+    
+}
+
+:root{
+
+    --ff-headeing:'Staatliches', cursive;
+    --ff-texting:'Palanquin', sans-serif;
+
+    --bg-header-primary:#8E9AAF;
+    --bg-header-secondary:#CBC0D3;
+
+    --bg-primary:#EFF1FF;
+    --fs-heading:4rem;
+    font-size:62.5%;
+
+    --fc-white:white;
+    --fc-violet-900:#4A4E69;
+    --fc-violet-200:#23053A;
+
+    
+}
+
+body{
+
+    background:var(--bg-primary);
+    font-size:1.6rem;
+    font-family:var(--ff-texting);
+    
+}
+
+body p{
+    color:var(--fc-violet-200);
+    font-family:var( --ff-texting);
+    font-weight:400;
+    font-size:1.5rem;
+    text-align:center;
+    line-height: 1.5rem;
+}
+header{
+    background:#8E9AAF;
+    padding:32px 0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:3.3rem;
+    
+}
+
+header img{
+    width:13.7rem;
+    
+}
+header h1{
+    background:var(--bg-header-secondary);
+    font-size:var(--fs-heading);
+    font-family:var(--ff-headeing);
+    font-weight:400;
+    color:var(--fc-white);
+    letter-spacing: 0.5rem;
+    padding:0.7rem 0;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    width:100%;
+
+    text-align:center;
+    text-transform:uppercase;
+}
+
+main{
+    padding:3.2rem;
+    max-width: 38.4rem;
+    margin:0 auto;
+    
+}
+.cards{
+    margin-top:4rem;
+    display:grid;
+    gap:3.2rem;
+}
+.card{
+    animation:up 1s ease-in-out;
+    position:relative;
+}
+.card img{
+   
+width:100%;
+
+border-radius:2rem;
+}
+
+.card h2{
+    animation:showup 800ms ease-in-out;
+    animation-delay:400ms;
+    animation-fill-mode: backwards;
+    color:var(--fc-violet-900);
+    font-family:var(--ff-headeing);
+    background:var(--bg-primary);
+    padding:1rem 2.4rem;
+    border-radius:25rem;
+    position:absolute;
+    z-index:1;
+    top:1.6rem;
+    right:1.6rem;
+    font-weight: 400;
+    font-size: 2rem;
+line-height: 34px;
+
+letter-spacing: 0.05em;
+}
+
+
+@keyframes up{
+
+    0%{
+        opacity:0;
+        transform:translatey(40px);
+
+    }
+    100%{
+        opacity:1;
+        transform:translatey(0);
+    }
+}
+
+@keyframes showup{
+0%{
+    opacity:0;
+    transform:scale(0) translatey(-80px);
+}
+60%{
+    transform:scale(1.2);
+}
+80%{
+    transform:scale(0.8);
+}
+100%{
+    opacity:1;
+    transform:scale(1) translatey(0);
+}
+}
