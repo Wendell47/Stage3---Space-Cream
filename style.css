@@ -51,7 +51,9 @@ header{
 }
 header p{
    
-    padding: 4.8rem 1rem;
+    padding: 4.8rem;
+    padding-bottom:0;
+    max-width: 38.4rem;
 }
 
 header::before{
@@ -147,6 +149,7 @@ letter-spacing: 0.05em;
 
 footer{
     margin-top:5rem;
+    display:none;
 }
 
 footer p{
@@ -161,6 +164,9 @@ footer a{
 
 @media (min-width:600px){
 
+        header p{
+            max-width: 38.4rem;
+        }
     main{
         max-width: 70rem;
     }
@@ -256,6 +262,10 @@ footer a{
     .cards div:nth-child(6){
         grid-area:G;
     
+    }
+
+    footer {
+        display:inicial;
     }
 }
 
